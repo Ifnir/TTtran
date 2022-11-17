@@ -3,7 +3,7 @@ Global("TTSpawnQuest","GLOBAL",0)
 THEN 
 RESPONSE #100
 CreateCreature("TTKAE", [567.410],0)
-CreateCreature("TTQUYEN", [569.413],1)
+CreateCreature("TTQUYEN", [671.361],1)
 SetGlobal("TTSpawnQuest","GLOBAL",1)
 StartDialogueNoSet(Player1)
 END

@@ -20,17 +20,20 @@ COMPILE ~TTtran/dialogues/ttquyen.d~
 
 // SCRIPTS
 
-EXTEND_BOTTOM ~AR0702.bcs~ 		~TTtran/scripts/AR0702.baf~
+EXTEND_TOP ~AR0702.bcs~ 		~TTtran/scripts/AR0702.baf~
 EXTEND_BOTTOM ~BALDUR.bcs~   	~TTtran/scripts/JournalEntries.baf~
 
 COPY ~TTtran/creatures/TTKAE.CRE~ ~override~
 SAY NAME1 @5000
 SAY NAME2 @5000
+WRITE_ASCII SCRIPT_DEFAULT ~TTKAE~
+WRITE_ASCII DIALOG ~TTKAE~
 
 COPY ~TTtran/creatures/TTQUYEN.CRE~ ~override~
 SAY NAME1 @5001
 SAY NAME2 @5001
-
+WRITE_ASCII SCRIPT_DEFAULT ~TTQUYEN~
+WRITE_ASCII DIALOG ~TTQUYEN~
 
 //////////////////////////////////////////////////////////////
 
