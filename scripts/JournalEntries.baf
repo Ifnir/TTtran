@@ -2,6 +2,7 @@
 
 IF
 Global("TTMainQuest", "GLOBAL",1)
+Global("TTSpawnQuest","GLOBAL",0)
 Global("TTMainQuestJournal","GLOBAL",0)
 THEN
 RESPONSE #100
