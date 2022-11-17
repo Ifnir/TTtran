@@ -1,0 +1,30 @@
+BACKUP ~TTtran/Backup~
+AUTHOR ~ifnir (theifnir@gmail.com)~
+VERSION	~v1.0~
+README ~TTtran/readme.txt~
+
+// Translations
+AUTO_TRA ~TTtran/translations/%s~
+
+LANGUAGE
+	~English~
+	~English~
+	~TTtran/translations/English/TTsetup.tra~
+
+BEGIN @1
+DESIGNATED 0
+SUBCOMPONENT @2
+
+OUTER_SET include_saves = 0
+INCLUDE ~%MOD_FOLDER%/lib/install.tph~
+
+BEGIN @2
+
+BEGIN @3 /* Yes and patch existing save games */
+DESIGNATED 1
+SUBCOMPONENT @2
+
+OUTER_SET include_saves = 1
+INCLUDE ~%MOD_FOLDER%/lib/install.tph~
+
+

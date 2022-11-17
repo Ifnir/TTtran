@@ -1,0 +1,20 @@
+// MAIN
+
+IF
+Global("TTMainQuest", "GLOBAL",1)
+Global("TTMainQuestJournal","GLOBAL",0)
+THEN
+RESPONSE #100
+AddJournalEntry(@0, QUEST)
+SetGlobal("TTMainQuestJournal", "GLOBAL",1)
+END
+
+IF
+Global("TTMainQuest", "GLOBAL",2)
+Global("TTMainQuestJournal","GLOBAL",1)
+THEN
+RESPONSE #100
+EraseJournalEntry(@0)
+AddJournalEntry(@1, QUEST)
+SetGlobal("TTMainQuestJournal", "GLOBAL",2)
+END
