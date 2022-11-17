@@ -2,7 +2,8 @@ IF
 Global("TTCreateKae","GLOBAL",0)
 THEN 
 RESPONSE #100
-CreateCreature("TTKAE", [567.410],1)
+CreateCreature("TTKAE", [567.410],0)
 CreateCreature("TTQUYEN", [568.411],1)
 SetGlobal("TTCreateKae","GLOBAL",1)
+StartDialogueNoSet(Player1)
 END
