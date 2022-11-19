@@ -1,9 +1,11 @@
 IF
-Global("TTSpawnQuest","GLOBAL",0)
+Global("TTMainQuest", "GLOBAL",1)
+Global("TTMainQuestJournal","GLOBAL",0)
 THEN 
 RESPONSE #100
 CreateCreature("TTKAE", [567.410],0)
 CreateCreature("TTQUYEN", [671.361],1)
-SetGlobal("TTSpawnQuest","GLOBAL",1)
+CreateCreature("TTVICT", [502.267],2)
+SetGlobal("TTMainQuestJournal","GLOBAL",1)
 StartDialogueNoSet(Player1)
 END
