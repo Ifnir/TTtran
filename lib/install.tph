@@ -16,7 +16,7 @@ END
 // Dialogues
 
 COMPILE ~TTtran/dialogues/ttkae.d~
-// COMPILE ~TTtran/dialogues/ttquyen.d~
+ COMPILE ~TTtran/dialogues/ttvict.d~
 
 // SCRIPTS
 
