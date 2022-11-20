@@ -1,10 +1,25 @@
 IF
 Global("TTSpawnQuest","GLOBAL",0)
+Global("TTSpokeToVictoria","GLOBAL",0)
 THEN 
 RESPONSE #100
 CreateCreature("TTKAE", [567.410],0)
 CreateCreature("TTQUYEN", [671.361],1)
-CreateCreature("TTVICT", [435.205],0)
+CreateCreature("TTVICT", [435.205],2)
 SetGlobal("TTSpawnQuest","GLOBAL",1)
-//StartDialogueNoSet(Player1)
+StartDialogueNoSet(Player1)
+END
+
+IF
+  Global("TTSpokeToVictoria","GLOBAL",2)
+THEN
+    RESPONSE #100
+        CutSceneId(Player1)
+        ActionOverride(Player1,JumpToPoint([672.363]))
+        //CreateVisualEffect("ICFIRSDI",[671.361])
+        ActionOverride("TTQUYEN",DisplayStringHead([671.361],~You do not talk about my child like that~))  // Curse you, <CHARNAME>! I shall not be defeated by you!
+		CreateVisualEffectObject("SPDISPMA",[671.361])
+        Wait(2)
+        Kill(Player1)
+        EndCutSceneMode()
 END

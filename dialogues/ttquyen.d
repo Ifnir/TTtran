@@ -1,0 +1,12 @@
+BEGIN TTQUYEN
+
+CHAIN IF ~Global("TTMainQuest","GLOBAL", 1)~ THEN TTQUYEN AREA0702Q0
+@0
+END
+IF ~Global("TTSpokeToVictoria","GLOBAL", 1)~ THEN REPLY @1 EXTERN TTQUYEN AREA0702Q1
+IF ~Global("TTSpokeToVictoria","GLOBAL", 1)~ THEN REPLY @3 EXIT
+
+
+CHAIN IF ~Global("TTSpokeToVictoria","GLOBAL", 1)~ THEN TTQUYEN AREA0702Q1
+@2
+DO ~SetGlobal("TTSpokeToVictoria","GLOBAL", 2)~ EXIT

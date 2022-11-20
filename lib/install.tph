@@ -17,10 +17,11 @@ END
 
 COMPILE ~TTtran/dialogues/ttkae.d~
 COMPILE ~TTtran/dialogues/ttvict.d~
+COMPILE ~TTtran/dialogues/ttquyen.d~
 
 // SCRIPTS
 
-EXTEND_BOTTOM ~AR0702.bcs~ 		~TTtran/scripts/AR0702.baf~
+EXTEND_TOP ~AR0702.bcs~ 		~TTtran/scripts/AR0702.baf~
 EXTEND_BOTTOM ~BALDUR.bcs~   	~TTtran/scripts/JournalEntries.baf~
 
 // Creatures
