@@ -14,12 +14,13 @@ IF
   Global("TTSpokeToVictoria","GLOBAL",2)
 THEN
     RESPONSE #100
-        CutSceneId(Player1)
+        ClearAllActions()
+        StartCutSceneMode()
+        StartCutScene("deathbyquyen")
+        FadeFromColor([30.0],0)
         ActionOverride(Player1,JumpToPoint([672.363]))
-        //CreateVisualEffect("ICFIRSDI",[671.361])
-        ActionOverride("TTQUYEN",DisplayStringHead([671.361],~You do not talk about my child like that~))  // Curse you, <CHARNAME>! I shall not be defeated by you!
-		CreateVisualEffectObject("SPDISPMA",[671.361])
-        Wait(2)
+        CreateVisualEffect("SPCMWOUI",[671.361])
+        CreateVisualEffect("SPCOMEND",[671.361])
+        Wait(4)
         Kill(Player1)
-        EndCutSceneMode()
 END

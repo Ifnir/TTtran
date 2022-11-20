@@ -1,1 +1,13 @@
 Test Tran Quest
+
+AREA0602
+
+Castle Area
+AREA1304
+AREA1302
+AREA1303
+
+Alternative
+OH6500
+OH8100
+CHECKOUT script for AREA0714
