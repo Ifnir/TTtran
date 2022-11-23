@@ -17,17 +17,31 @@ END
 
 COPY ~TTtran/areas~ ~override~
 
-ACTION_IF GAME_IS ~BG2EE EET~ THEN BEGIN
-  COPY ~TTtran/tis+pvrz~ ~override~
- END ELSE BEGIN
-  COPY ~TTtran/tis~ ~override~
-END
+//ACTION_IF GAME_IS ~BG2EE EET~ THEN BEGIN
+//  COPY ~TTtran/tis+pvrz~ ~override~
+// END ELSE BEGIN
+//  COPY ~TTtran/tis~ ~override~
+//END
 
-COPY_EXISTING ~TTAR0001.are~ ~override~
+COPY_EXISTING ~TT0001.are~ ~override~
 SAY 0x267c @6000 /* The Kae Castle */
 
-ACTION_IF NOT (ENGINE_IS ~bgee bg2ee eet~) BEGIN
-  COPY_EXISTING ttar0001.tis override
+// patch WMP using TBL files
+INCLUDE ~TTtran/Worldmap/add_worldmap_tbl.tpa~
+LAF ADD_WORLDMAP_TBL
+  INT_VAR
+  verbose = 0
+  inclSv = include_saves
+  add_x = wmp_xCoord_SoA
+  add_y = wmp_yCoord_SoA
+  patch_bp_files = 1
+  patch_mastarea = 1
+  STR_VAR
+  path_to_areas = EVAL ~TTtran/Worldmap/areas_bg2.tbl~
+  path_to_areas_bp = EVAL ~TTtran/Worldmap/areas.tbl~
+  path_to_links = EVAL ~TTtran/Worldmap/links.tbl~
+  path_to_trans = EVAL ~TTtran/Translations/%LANGUAGE%/worldmap.tra~
+  icons_table = remapped_icons
 END
 
 
@@ -39,7 +53,7 @@ COMPILE ~TTtran/dialogues/ttquyen.d~
 
 // SCRIPTS
 
-EXTEND_BOTTOM ~TTAR0001.bcs~  ~TTtran/scripts/TTAR0001.baf~
+EXTEND_BOTTOM ~TT0001.bcs~    ~TTtran/scripts/TT0001.baf~
 EXTEND_BOTTOM ~AR0702.bcs~ 		~TTtran/scripts/AR0702.baf~
 EXTEND_BOTTOM ~BALDUR.bcs~   	~TTtran/scripts/JournalEntries.baf~
 
