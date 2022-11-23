@@ -13,6 +13,24 @@ ACTION_IF GAME_IS ~SOA TOB BGT~ THEN BEGIN
 LOAD_TRA ~TTtran/translations/%LANGUAGE%/install.tra~
 END
 
+// AREAS
+
+COPY ~TTtran/areas~ ~override~
+
+ACTION_IF GAME_IS ~BG2EE EET~ THEN BEGIN
+  COPY ~TTtran/tis+pvrz~ ~override~
+ END ELSE BEGIN
+  COPY ~TTtran/tis~ ~override~
+END
+
+COPY_EXISTING ~TTAR0001.are~ ~override~
+SAY 0x267c @6000 /* The Kae Castle */
+
+ACTION_IF NOT (ENGINE_IS ~bgee bg2ee eet~) BEGIN
+  COPY_EXISTING ttar0001.tis override
+END
+
+
 // Dialogues
 
 COMPILE ~TTtran/dialogues/ttkae.d~
@@ -21,7 +39,8 @@ COMPILE ~TTtran/dialogues/ttquyen.d~
 
 // SCRIPTS
 
-EXTEND_TOP ~AR0702.bcs~ 		~TTtran/scripts/AR0702.baf~
+EXTEND_BOTTOM ~TTAR0001.bcs~  ~TTtran/scripts/TTAR0001.baf~
+EXTEND_BOTTOM ~AR0702.bcs~ 		~TTtran/scripts/AR0702.baf~
 EXTEND_BOTTOM ~BALDUR.bcs~   	~TTtran/scripts/JournalEntries.baf~
 
 // Creatures
