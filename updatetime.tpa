@@ -1,0 +1,43 @@
+DEFINE_PATCH_FUNCTION updateTTime
+	STR_VAR
+		area_toUpdate = "arename"
+BEGIN
+	GET_OFFSET_ARRAY wmp_area_array WMP_AREAS
+	PHP_EACH wmp_area_array AS area_num => area_offset BEGIN
+			READ_ASCII area_offset area_name (8) NULL
+			PATCH_IF ~%area_name%~ STRING_EQUAL_CASE ~%area_toUpdate%~ BEGIN
+				SET area_id1 = area_num
+			END
+	END
+	
+	PHP_EACH travelTime AS area => tTime BEGIN
+		GET_OFFSET_ARRAY wmp_area_array1 WMP_AREAS
+		PHP_EACH wmp_area_array1 AS area_num => area_offset BEGIN
+			READ_ASCII area_offset area_name (8) NULL
+			PATCH_IF ~%area_name%~ STRING_EQUAL_CASE ~%area%~ BEGIN
+				FOR (i = 0; i <= 24; i+=8) BEGIN
+					GET_OFFSET_ARRAY2 links_array area_offset 0x38 4 0x54+i 4 0x50+i 4 0xd8
+					PHP_EACH links_array AS links_num => links_offset BEGIN
+						READ_LONG links_offset links_index
+						PATCH_IF links_index = area_id1 BEGIN
+							WRITE_LONG links_offset+0x24 tTime
+						END
+					END
+				END
+				SET area_id2 = area_num
+			END
+			PATCH_IF area_num = area_id1 BEGIN
+				FOR (i = 0; i <= 24; i+=8) BEGIN
+					GET_OFFSET_ARRAY2 links_array area_offset 0x38 4 0x54+i 4 0x50+i 4 0xd8
+					PHP_EACH links_array AS links_num => links_offset BEGIN
+						READ_LONG links_offset links_index
+						PATCH_IF links_index = area_id2 BEGIN
+							WRITE_LONG links_offset+0x24 tTime
+						END
+					END
+				END
+			END
+		END
+	
+	END
+END
