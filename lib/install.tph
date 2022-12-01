@@ -27,29 +27,15 @@ COPY ~TTtran/areas~ ~override~
 //  COPY ~TTtran/tis~ ~override~
 //END
 
-// patch WMP using TBL files
-INCLUDE ~TTtran/Worldmap/add_worldmap_tbl.tpa~
-LAF ADD_WORLDMAP_TBL
-  INT_VAR
-  verbose = 0
-  inclSv = include_saves
-  add_x = wmp_xCoord_SoA
-  add_y = wmp_yCoord_SoA
-  patch_bp_files = 1
-  patch_mastarea = 1
-  STR_VAR
-  path_to_areas = EVAL ~TTtran/Worldmap/areas_bg2.tbl~
-  path_to_areas_bp = EVAL ~TTtran/Worldmap/areas.tbl~
-  path_to_links = EVAL ~TTtran/Worldmap/links.tbl~
-  path_to_trans = EVAL ~TTtran/Translations/%LANGUAGE%/worldmap.tra~
-  icons_table = remapped_icons
-END
 
 // Dialogues
+
 
 COMPILE ~TTtran/dialogues/ttkae.d~
 COMPILE ~TTtran/dialogues/ttvict.d~
 COMPILE ~TTtran/dialogues/ttquyen.d~
+COMPILE ~TTtran/dialogues/ttmaria.d~
+
 
 // SCRIPTS
 
