@@ -1,6 +1,6 @@
 @1    = ~Yes, but don't patch existing save games~
-@2    = ~Install Tran Quest Mod~
-@3    = ~Yes and patch existing save games~
+@2    = ~Yes and patch existing save games~
+@3    = ~Install Tran Quest Mod~
 
 //Worldmap GUI Strings
 @4000300 = ~Hours~

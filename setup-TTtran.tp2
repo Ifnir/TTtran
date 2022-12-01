@@ -33,9 +33,7 @@ SUBCOMPONENT @2
 OUTER_SET include_saves = 0
 INCLUDE ~%MOD_FOLDER%/lib/install.tph~
 
-BEGIN @2
-
-BEGIN @3 /* Yes and patch existing save games */
+BEGIN @2 /* Yes and patch existing save games */
 DESIGNATED 1
 SUBCOMPONENT @2
 

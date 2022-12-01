@@ -2,6 +2,5 @@ IF
     True()
 THEN 
 RESPONSE #100
-CreateCreature("TTMARIA", [502.192],0)
-StartDialogueNoSet(Player1)
+CreateCreature("TTMARIA",[348.116],3)
 END
