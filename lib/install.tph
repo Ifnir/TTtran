@@ -34,7 +34,7 @@ COPY ~TTtran/areas~ ~override~
 COMPILE ~TTtran/dialogues/ttkae.d~
 COMPILE ~TTtran/dialogues/ttvict.d~
 COMPILE ~TTtran/dialogues/ttquyen.d~
-COMPILE ~TTtran/dialogues/ttmaria.d~
+COMPILE ~TTtran/dialogues/tt527.d~
 
 
 // SCRIPTS
@@ -61,6 +61,10 @@ SAY NAME2 @5002
 COPY ~TTtran/creatures/TTMARIA.CRE~ ~override~
 SAY NAME1 @5003
 SAY NAME2 @5003
+
+COPY ~TTtran/creatures/TTLASSE.CRE~ ~override~
+SAY NAME1 @5004
+SAY NAME2 @5004
 
 //////////////////////////////////////////////////////////////
 

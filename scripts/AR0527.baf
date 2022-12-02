@@ -4,5 +4,7 @@ IF
 THEN 
 RESPONSE #100
 CreateCreature("TTMARIA",[348.116],3)
+CreateCreature("TTLASSE",[328.146],3)
+SetGlobal("TTSpokeToAnneMaria","GLOBAL",1)
 StartDialogueNoSet(Player1)
 END
