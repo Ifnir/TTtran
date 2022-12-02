@@ -3,8 +3,8 @@ IF
     Global("TTSpokeToAnneMaria","GLOBAL",0)
 THEN 
 RESPONSE #100
-CreateCreature("TTMARIA",[348.116],3)
-CreateCreature("TTLASSE",[328.146],3)
+CreateCreature("TTMARIA",[341.343],3)
+CreateCreature("TTLASSE",[390.278],3)
 SetGlobal("TTSpokeToAnneMaria","GLOBAL",1)
 StartDialogueNoSet(Player1)
 END
