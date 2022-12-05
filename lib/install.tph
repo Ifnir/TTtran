@@ -21,6 +21,9 @@ END
 
 COPY ~TTtran/areas~ ~override~
 
+COPY_EXISTING ~AR0415.are~ ~override~
+WRITE_ASCII 0x94 ~AR0415~
+
 //ACTION_IF GAME_IS ~BG2EE EET~ THEN BEGIN
 //  COPY ~TTtran/tis+pvrz~ ~override~
 // END ELSE BEGIN
@@ -30,17 +33,17 @@ COPY ~TTtran/areas~ ~override~
 
 // Dialogues
 
-
 COMPILE ~TTtran/dialogues/ttkae.d~
 COMPILE ~TTtran/dialogues/ttvict.d~
 COMPILE ~TTtran/dialogues/ttquyen.d~
 COMPILE ~TTtran/dialogues/tt527.d~
-
+COMPILE ~TTtran/dialogues/tt415.d~
 
 // SCRIPTS
 
 COMPILE     ~TTtran/scripts/AR0527.baf~
 
+EXTEND_TOP ~AR0415.bcs~     ~TTtran/scripts/AR0415.baf~
 EXTEND_TOP ~AR0702.bcs~ 		~TTtran/scripts/AR0702.baf~
 EXTEND_TOP ~BALDUR.bcs~   	~TTtran/scripts/JournalEntries.baf~
 
@@ -65,6 +68,22 @@ SAY NAME2 @5003
 COPY ~TTtran/creatures/TTLASSE.CRE~ ~override~
 SAY NAME1 @5004
 SAY NAME2 @5004
+
+COPY ~TTtran/creatures/TTREC01.CRE~ ~override~
+SAY NAME1 @5005
+SAY NAME2 @5005
+
+COPY ~TTtran/creatures/TTREC02.CRE~ ~override~
+SAY NAME1 @5007
+SAY NAME2 @5007
+
+COPY ~TTtran/creatures/TTREC03.CRE~ ~override~
+SAY NAME1 @5006
+SAY NAME2 @5006
+
+COPY ~TTtran/creatures/TTREC04.CRE~ ~override~
+SAY NAME1 @5008
+SAY NAME2 @5008
 
 //////////////////////////////////////////////////////////////
 
