@@ -52,8 +52,17 @@
 @41 = ~Really..~
 
 @42 = ~Where did you find our friend?~
-@43 = ~The lighthouse~
+@43 = ~The lighthouse~ // Player1
 @44 = ~Can you tell for what reason we located him at that spot?~
-@45 = ~I don't know...~
-@46 = ~I believe, the lighthouse represent our motivation, the light guides our spirit. Without it, we're blinded, not knowing where we can go.~
+@45 = ~I don't know...~ // Player1
+@46 = ~I believe, the lighthouse represent our motivation, the light guides our spirit. Without it, we're blinded, not knowing where we can go.~ // Player1
+@47 = ~You are correct.~
 
+@48 = ~Your next test is about commitment, this is going to be out of your comfort zone.~
+@49 = ~How so?~ // Player1
+@50 = ~Well.. We want to know how committed you are, because.. we have many enemies.~
+@51 = ~We want you to kill someone, who goes by the name Pax, he's staying at the Five Flagons Inn.~
+@52 = ~That's was unexpected, it doesn't seem something a peaceful order would do.~ // Player1
+@53 = ~It's not something we're proud of, but it is a must. He's a threat to our order, we can't tell why at this moment. We wouldn't ask, if we didn't believe you were capable.~
+@54 = ~If there's no way around, then I will do it.~
+@55 = ~One last thing, he's not alone, and he'll try to persuade you. Do not trust him, he's a manipulator.~
