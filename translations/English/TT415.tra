@@ -66,3 +66,10 @@
 @53 = ~It's not something we're proud of, but it is a must. He's a threat to our order, we can't tell why at this moment. We wouldn't ask, if we didn't believe you were capable.~
 @54 = ~If there's no way around, then I will do it.~
 @55 = ~One last thing, he's not alone, and he'll try to persuade you. Do not trust him, he's a manipulator.~
+
+@56 = ~We heard it is done, you have shown us your commitment, and you have our gratitude.~
+@57 = ~This was not easy to ask of you, but it had to be done.~
+@58 = ~Sure it was, it had to be done, Pax had to die.~ // Player1
+
+// If you spoke to Pax
+@59 = ~I'm curious, before his death, Pax spoke about something, that troubled me.~
