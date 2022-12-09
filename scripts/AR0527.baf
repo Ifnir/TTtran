@@ -8,3 +8,11 @@ CreateCreature("TTLASSE",[390.278],3)
 SetGlobal("TTSpokeToAnneMaria","GLOBAL",1)
 StartDialogueNoSet(Player1)
 END
+
+IF
+    GLOBAL("TTGuards","GLOBAL",1)
+THEN
+RESPONSE #100
+CreateCreature("TTSOL",[241.343],3)
+CreateCreature("TTSOL",[241.343],3)
+END

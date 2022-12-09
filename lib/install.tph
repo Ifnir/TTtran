@@ -85,6 +85,10 @@ COPY ~TTtran/creatures/TTREC04.CRE~ ~override~
 SAY NAME1 @5008
 SAY NAME2 @5008
 
+COPY ~TTtran/creatures/TTSOL.CRE~ ~override~
+SAY NAME1 @5009
+SAY NAME2 @5009
+
 //////////////////////////////////////////////////////////////
 
 
