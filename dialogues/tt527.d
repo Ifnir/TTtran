@@ -71,6 +71,6 @@ CHAIN TTMARIA 527.08.20
 
 CHAIN TTMARIA 527.08.21
 @26
-DO ~SetGlobal("TTGuards","GLOBAL",1)~ EXIT
+DO ~SetGlobal("TTGuards","GLOBAL",0)~ EXIT
 
 

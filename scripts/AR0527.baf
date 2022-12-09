@@ -10,9 +10,12 @@ StartDialogueNoSet(Player1)
 END
 
 IF
-    GLOBAL("TTGuards","GLOBAL",1)
+    GLOBAL("TTGuards","GLOBAL",0)
 THEN
 RESPONSE #100
+SetGLOBAL("TTGuards","GLOBAL",1)
 CreateCreature("TTSOL",[241.343],3)
 CreateCreature("TTSOL",[241.343],3)
+ChangeEnemyAlly("TTMARIA",ENEMY)
+ChangeEnemyAlly("TTLASSE",ENEMY)
 END
