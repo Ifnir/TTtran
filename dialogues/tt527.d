@@ -64,13 +64,15 @@ IF~~ THEN REPLY @24 EXTERN TTMARIA 527.08.21
 
 CHAIN TTMARIA 527.08.19
 @22
+END
 IF~~ THEN REPLY @23 EXTERN TTMARIA 527.08.20
 
 CHAIN TTMARIA 527.08.20
 @25
+DO ~SetGlobal("TTSpawnQuest","GLOBAL",2)~ EXIT
 
 CHAIN TTMARIA 527.08.21
 @26
-DO ~SetGlobal("TTGuards","GLOBAL",0)~ EXIT
+DO ~SetGlobal("TTGuards","GLOBAL",1) ActionOverride("ttmaria",ENEMY()) ActionOverride("ttlasse",ENEMY())~ EXIT
 
 
