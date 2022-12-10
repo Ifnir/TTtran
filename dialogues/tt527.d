@@ -73,6 +73,6 @@ DO ~SetGlobal("TTSpawnQuest","GLOBAL",2)~ EXIT
 
 CHAIN TTMARIA 527.08.21
 @26
-DO ~SetGlobal("TTGuards","GLOBAL",1) ActionOverride("ttmaria",ENEMY()) ActionOverride("ttlasse",ENEMY())~ EXIT
+DO ~SetGlobal("TTGuards","GLOBAL",1) ENEMY() ActionOverride("TTLASSE",ENEMY())~ EXIT
 
 
