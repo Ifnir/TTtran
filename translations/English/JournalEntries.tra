@@ -1,6 +1,8 @@
 @0     = ~Family Tran
 We meet a family of three, Kae, Quyen, and Victoria. They believe Kae's mother has been brainwashed by an cult named Rosenkrautz.~
 @1     = ~Family Tran
-You spoke to the mother.~
+You spoke to the mother. She told about the location, where you can sign up to be eigible.~
 @2     = ~Family Tran
-Going to the recruit place.~
+You went to location, and spoke to the recruiting officers, who gave you three task to solve, before you can join.~
+@3     = ~Family Tran
+Finally, you're done with all three, and now you're teleported to the headquarter.~
