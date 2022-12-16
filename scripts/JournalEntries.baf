@@ -1,21 +1,22 @@
 // MAIN
 
 IF
-Global("TTMainQuest", "GLOBAL",1)
+Global("TTMainQuest","GLOBAL",1)
 Global("TTMainQuestJournal","GLOBAL",0)
 THEN
 RESPONSE #100
-AddJournalEntry(@0, QUEST)
+AddJournalEntry(@0,QUEST)
 SetGlobal("TTMainQuestJournal","GLOBAL",1)
 END
 
 IF
-Global("TTMainQuest", "GLOBAL",2)
+Global("TTMainQuest","GLOBAL",2)
 Global("TTMainQuestJournal","GLOBAL",1)
 THEN
 RESPONSE #100
-AddJournalEntry(@1, QUEST)
-SetGlobal("TTMainQuestJournal", "GLOBAL",2)
+EraseJournalEntry(@0)
+AddJournalEntry(@1,QUEST)
+SetGlobal("TTMainQuestJournal","GLOBAL",2)
 END
 
 IF
@@ -23,15 +24,17 @@ Global("TTMainQuest","GLOBAL",3)
 Global("TTMainQuestJournal","GLOBAL",2)
 THEN
 RESPONSE #100
-AddJournalEntry(@2, QUEST)
-SetGlobal("TTMainQuestJournal", "GLOBAL",3)
+EraseJournalEntry(@1)
+AddJournalEntry(@2,QUEST)
+SetGlobal("TTMainQuestJournal","GLOBAL",3)
 END
 
 IF
-Global("TTMainQuest", "GLOBAL",4)
+Global("TTMainQuest","GLOBAL",4)
 Global("TTMainQuestJournal","GLOBAL",3)
 THEN
 RESPONSE #100
-AddJournalEntry(@3, QUEST)
-SetGlobal("TTMainQuestJournal", "GLOBAL",4)
+EraseJournalEntry(@2)
+AddJournalEntry(@3,QUEST)
+SetGlobal("TTMainQuestJournal","GLOBAL",4)
 END
