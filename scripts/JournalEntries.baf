@@ -6,7 +6,7 @@ Global("TTMainQuestJournal","GLOBAL",0)
 THEN
 RESPONSE #100
 AddJournalEntry(@0, QUEST)
-SetGlobal("TTMainQuestJournal", "GLOBAL",1)
+SetGlobal("TTMainQuestJournal","GLOBAL",1)
 END
 
 IF
@@ -19,7 +19,7 @@ SetGlobal("TTMainQuestJournal", "GLOBAL",2)
 END
 
 IF
-Global("TTMainQuest", "GLOBAL",3)
+Global("TTMainQuest","GLOBAL",3)
 Global("TTMainQuestJournal","GLOBAL",2)
 THEN
 RESPONSE #100

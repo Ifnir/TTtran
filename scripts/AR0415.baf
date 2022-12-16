@@ -3,10 +3,10 @@ IF
     Global("TTSpokeToRecruiters","GLOBAL",0)
 THEN 
 RESPONSE #100
-CreateCreature("TTREC01",[103.117],3)
-CreateCreature("TTREC02",[148.78],3)
-CreateCreature("TTREC03",[198.43],3)
-CreateCreature("TTREC04",[129.205],3)
+CreateCreature("TTREC01",[53.117],3)
+CreateCreature("TTREC02",[58.78],3)
+CreateCreature("TTREC03",[48.43],3)
+CreateCreature("TTREC04",[49.205],3)
 SetGlobal("TTSpokeToRecruiters","GLOBAL",1)
 StartDialogueNoSet(Player1)
 END
