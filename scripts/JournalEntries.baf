@@ -14,7 +14,6 @@ Global("TTMainQuest", "GLOBAL",2)
 Global("TTMainQuestJournal","GLOBAL",1)
 THEN
 RESPONSE #100
-EraseJournalEntry(@0)
 AddJournalEntry(@1, QUEST)
 SetGlobal("TTMainQuestJournal", "GLOBAL",2)
 END
@@ -24,7 +23,6 @@ Global("TTMainQuest", "GLOBAL",3)
 Global("TTMainQuestJournal","GLOBAL",2)
 THEN
 RESPONSE #100
-EraseJournalEntry(@1)
 AddJournalEntry(@2, QUEST)
 SetGlobal("TTMainQuestJournal", "GLOBAL",3)
 END
@@ -34,7 +32,6 @@ Global("TTMainQuest", "GLOBAL",4)
 Global("TTMainQuestJournal","GLOBAL",3)
 THEN
 RESPONSE #100
-EraseJournalEntry(@2)
 AddJournalEntry(@3, QUEST)
 SetGlobal("TTMainQuestJournal", "GLOBAL",4)
 END
