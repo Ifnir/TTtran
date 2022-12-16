@@ -1,40 +1,52 @@
 @0 = ~Hello, what's your business?~
+
 @1 = ~I was told, this was place to join Rosicrucian order.~ // Player1
 @2 = ~I'm sorry, I think this is the wrong place~ // Player1
+
 @3 = ~Indeed this is the place.~
 @4 = ~Wonderful, a new member!~
-@5 = ~Easy, times has changed, we cannot no longer let anyone join our rank anymore.~
-
+@5 = ~Easy, times has changed, we cannot let anyone join our rank anymore.~
 @6 = ~That's right, before you can become an initiate, you'd have to do a test.~
+
+// 02.01
 @7 = ~What sort of test is this?~ // Player1
+// 02.02
 @8 = ~Why would I've to complete a test, I thought this was peaceful order.~ // Player1
+// 02.03
 @9 = ~Before I do anything, I have questions about your order.~ // Player1
+// 02.04
 @10 = ~A test! I had enough, anyone ask for this, and it's always a waste of time.~ // Player1
 
+// 02.01
 @11 = ~It is about your will, commitment and spirit. We have three test for you to complete.~
 @12 = ~Is that so, then let us begin.~ // Player1
 @13 = ~How about we skip that, and you don't have to die.~ // Player1
 @14 = ~You know what, this isn't for me right now, I've other more important matters to attend.~ // Player1
-
+// 02.02
 @15 = ~We want your to prove your worth to us, show us the motivation behind your reason for joining us.~
 @16 = ~I only have one motivation, and is it to join your order. Can't you understand that?~ // Player1
 @17 = ~How boring, but if it's what required of me, then let it be so.~ // Player1
-@18 = ~Alright, tell us what has to be done.~ // Player1
-
+@18 = ~This doesn't seem to be worth my time.~ // Player1
+// 02.03
 @19 = ~We'll gladly answer questions. However, there are sensitive information, that require higher rank, that even we don't know.~
 @20 = ~I never heard of you before, when was the order created?~ // Player1
 @21 = ~That sounds rather suspicious, what's the reason behind keeping information for the highe ranks only?~ // Player1
 @22 = ~When did you guys join?~ // Player1
-@23 = ~I've no more questions.~
+@23 = ~I have no more questions, I want to do the tests.~ // Player1
 
+// response@12
 @24 = ~Excellent, let us begin with spirit. It will explore your intelligence and illuminate a hidden potential, you might not known of yourself.~
 @25 = ~You've to find four of our members staying in the city, they give you a riddle, and you will also have to explain why you believe we installed them at that specific spot.~
-@26 = ~To find the first, listen to my riddle. I guide, when I'm on, but I mislead when I'm off, and I'm only on, at night.~
+@26 = ~To find the first, listen to my riddle. I guide, when I'm on, but I mislead when I'm off, and I'm only on, at night. What am I?~
 
+// 02.ATT
 @27 = ~Are you serious! We don't take too kindly to threats, you'll regret this. Time for talking is over, die!~
 
+// 02.04
 @28 = ~We understand, however, it is necessary for you to take these tests, it will give us a insight. Actions has power, it has influence, show us what you can do.~
 @29 = ~Okay, we'll do it.~
+
+// Question about the order
 
 @30 = ~It was created a long time ago, and ever since then, we've been hunted.~
 @31 = ~Although, we're small, we have our ways to survive.~
@@ -45,12 +57,14 @@
 @34 = ~It actually quite funny, each of us is only one year apart.~
 @35 = ~We have helped each study to where we at now.~
 @36 = ~What rank are you, guys?~ // Player1
-@37 = ~We're all scholars.~
-@38 = ~What does that mean?~ // Player1
-@39 = ~Guess you can't tell what it means to be a scholar.~ // Player1
-@40 = ~Unfortunately we're not inclined to tell.~
-@41 = ~Really..~
+@37 = ~We're all scholars, we can't tell much about, it something you will learn, when you're accepted.~
+@38 = ~Reallyyyyyy?~ // Player1
+@39 = ~It is weird, how little you can tell, it has to be difficult to gather new members this way.~ // Player1
+@40 = ~Really..~
+@41 = ~Unfortunately we're not inclined to tell.~
 
+
+// Riddle One
 @42 = ~Where did you find our friend?~
 @43 = ~The lighthouse~ // Player1
 @44 = ~Can you tell for what reason we located him at that spot?~
